@@ -1,0 +1,21 @@
+{
+  "name": "passtrunk",
+  "version": "0.0.1",
+  "description": "A place to store my passwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "passwords",
+    "store",
+    "trunk",
+    "react",
+    "auth",
+    "security",
+    "express",
+    "javascript"
+  ],
+  "author": "Javier García González <javier@garciagon.com>",
+  "license": "MIT"
+}

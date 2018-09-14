@@ -1,4 +1,4 @@
 {
-  "presets": ["es2015", "stage-0"],
-  "plugins": []
+  "presets": ["@babel/env", "@babel/react"],
+  "plugins": ["@babel/plugin-proposal-object-rest-spread"]
 }

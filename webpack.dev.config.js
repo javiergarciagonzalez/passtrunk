@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: [
-    path.join(__dirname, 'index.js')
+    path.join(__dirname, 'src', 'index.js')
   ],
   module: {
     rules: [{
@@ -16,18 +16,21 @@ module.exports = {
       loaders: ["style-loader", "css-loder", "less-loader"]
     }]
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: __dirname,
+    contentBase: path.join(__dirname, 'src'),
     historyApiFallback: true
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./index.html",
-      filename: "./index.html"
+      template: "./src/index.html",
+      filename: "./src/index.html"
     })
   ]
 }

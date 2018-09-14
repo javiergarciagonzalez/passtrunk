@@ -12,12 +12,12 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader'
     }, {
-      test: /\.less$/,
-      loaders: ["style-loader", "css-loder", "less-loader"]
+      test: /\.scss$/,
+      loaders: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
     }]
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.scss']
   },
   output: {
     path: path.join(__dirname, 'dist'),
